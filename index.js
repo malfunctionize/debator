@@ -15,7 +15,7 @@ module.exports = {
     "method": "run",
     "params": {
       "message": {
-        "p": "### Instruction\n\nExplain why you disagree with the following statement:\n\n${local.message}. Just explain while including the original message coherently.\n\n### Response\n\n",
+        "p": "### Instruction\n\nExplain why you disagree with the following statement:\n\n{{local.message}}. Just explain while including the original message coherently.\n\n### Response\n\n",
         "m": "../models/stable-vicuna/13b_q4_0.bin",
         "n": 256
       }
