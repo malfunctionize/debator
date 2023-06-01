@@ -9,6 +9,7 @@ module.exports = {
         "n": 256
       }
     },
+    "queue": true,
     "returns": "local.message"
   }, {
     "uri": "https://github.com/malfunctionize/llama.git/index.js",
@@ -20,6 +21,7 @@ module.exports = {
         "n": 256
       }
     },
+    "queue": true,
     "returns": "local.message"
   }, {
     "method": "push",
