@@ -1,0 +1,5 @@
+{
+  "dependencies": [
+    "https://github.com/malfunctionize/llama.git"
+  ]
+}
