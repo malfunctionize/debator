@@ -24,10 +24,10 @@ module.exports = {
     "queue": true,
     "returns": "local.message"
   }, {
-    "method": "push",
+    "method": "set",
     "params": {
       "self": {
-        "items": "{{local.message}}"
+        "items": "{{self.items.concat(local.message)}}"
       }
     }
   }, {
