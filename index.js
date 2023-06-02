@@ -28,7 +28,7 @@ module.exports = {
     "params": {
       "self": {
         "db.json": {
-          "items": "{{self.db.items.concat(local.message)}}"
+          "items": "{{self.db && self.db.items ? self.db.items.concat(local.message) : [local.message] }}"
         }
       }
     }
