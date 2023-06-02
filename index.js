@@ -27,7 +27,9 @@ module.exports = {
     "method": "set",
     "params": {
       "self": {
-        "items": "{{self.items.concat(local.message)}}"
+        "db.json": {
+          "items": "{{self.db.items.concat(local.message)}}"
+        }
       }
     }
   }, {
