@@ -1,5 +1,5 @@
-module.exports = {
-  run: [{
+{
+  "run": [{
     "uri": "https://github.com/malfunctionize/llama.git/index.js",
     "method": "run",
     "params": {

@@ -1,0 +1,34 @@
+{
+  "run": [{
+    "uri": "https://github.com/malfunctionize/llama.git/index.js",
+    "method": "run",
+    "params": {
+      "message": {
+        "p": "### Instruction\n\nWrite a brief controversial opinion.\n\n### Response\n\n",
+        "m": "../models/stable-vicuna/13b_q4_0.bin",
+        "n": 256
+      }
+    },
+    "queue": true
+  }, {
+    "uri": "https://github.com/malfunctionize/llama.git/index.js",
+    "method": "run",
+    "params": {
+      "message": {
+        "p": "### Instruction\n\nExplain why you disagree with the following statement:\n\n{{input}}. Just explain while including the original message coherently.\n\n### Response\n\n",
+        "m": "../models/stable-vicuna/13b_q4_0.bin",
+        "n": 256
+      }
+    },
+    "queue": true
+  }, {
+    "method": "set",
+    "params": {
+      "self": {
+        "db.json": {
+          "items": "{{self.db && self.db.items ? self.db.items.concat(input) : [input] }}"
+        }
+      }
+    }
+  }]
+}
