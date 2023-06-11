@@ -32,10 +32,5 @@ module.exports = {
         }
       }
     }
-  }, {
-    "method": "goto",
-    "params": {
-      "index": 1
-    }
   }]
 }
