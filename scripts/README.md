@@ -6,7 +6,7 @@ Try any of the following:
     1. Generate a controversial opinion
     2. Generate a counter argument
     3. Write the counter argument to `db.json`
-- [forever.json](once.json)
+- [forever.json](forever.json)
     1. Generate a controversial opinion
     2. Generate a counter argument
     3. Write the counter argument to `db.json`
